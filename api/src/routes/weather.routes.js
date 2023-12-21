@@ -4,7 +4,7 @@ const { getWeatherByCity } = require("../controllers/weatherController");
 
 const router = Router();
 
-router.get("/", async (req, res) => {
+router.get("/weather", async (req, res) => {
     const city = req.query;
     
     try {
