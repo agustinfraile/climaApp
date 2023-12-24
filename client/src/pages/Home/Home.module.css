@@ -1,0 +1,29 @@
+/* importo el archivo de variables de colores */
+@import "../../assets/colors/colors.css";
+
+
+.home_container {
+    background-color: var(--color-background);
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_container__search {
+    background-color: var(--color-background-secondary);
+
+
+    width: 100%;
+    height: 15vh;
+}
+
+.home_container__content {
+    background-color: var(--color-background-tertiary);
+
+    width: 100%;
+    height: 85vh;
+}

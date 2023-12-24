@@ -1,0 +1,41 @@
+/* archivo para declarar todos los colores que iran en la web */
+
+/* Colores de la paleta de colores */
+:root {
+    --color-primary: #1a73e8;
+    --color-primary-dark: #1a73e8;
+    --color-primary-light: #1a73e8;
+    --color-secondary: #1a73e8;
+    --color-secondary-dark: #1a73e8;
+    --color-secondary-light: #1a73e8;
+    --color-tertiary: #1a73e8;
+    --color-tertiary-dark: #1a73e8;
+    --color-tertiary-light: #1a73e8;
+    --color-text: #1a73e8;
+    --color-text-dark: #1a73e8;
+    --color-text-light: #1a73e8;
+    --color-text-secondary: #1a73e8;
+    --color-text-secondary-dark: #1a73e8;
+    --color-text-secondary-light: #1a73e8;
+    --color-text-tertiary: #1a73e8;
+    --color-text-tertiary-dark: #1a73e8;
+    --color-text-tertiary-light: #1a73e8;
+    --color-background: #bed4f2;
+    --color-background-dark: #1a73e8;
+    --color-background-light: #1a73e8;
+    --color-background-secondary: #5dad74;
+    --color-background-secondary-dark: #1a73e8;
+    --color-background-secondary-light: #1a73e8;
+    --color-background-tertiary: #1a73e8;
+    --color-background-tertiary-dark: #1a73e8;
+    --color-background-tertiary-light: #1a73e8;
+    --color-border: #1a73e8;
+    --color-border-dark: #1a73e8;
+    --color-border-light: #1a73e8;
+    --color-border-secondary: #1a73e8;
+    --color-border-secondary-dark: #1a73e8;
+    --color-border-secondary-light: #1a73e8;
+    --color-border-tertiary: #1a73e8;
+    --color-border-tertiary-dark: #1a73e8;
+    --color-border-tertiary-light: #1a73e8;
+}
