@@ -1,11 +1,11 @@
 import { AnyAction, Dispatch } from "@reduxjs/toolkit";
 import { ON_GET_CITIES_FAILED, ON_GET_CITIES_SUCCEEDED } from "./citiesConstants";
-import { getCities } from "./citiesServices";
+import { getCities, getCityWeather } from "./citiesServices";
 import { ICity } from "./types";
 
 
-export const onGetCities = () => async (dispatch: Dispatch<AnyAction>) => {
-    const response = await getCities();
+export const onGetCities = (city: string) => async (dispatch: Dispatch<AnyAction>) => {
+    const response = await getCityWeather(city);
     if (response) {
         dispatch(onGetCitiesSucceeded(response));
     } else {
@@ -14,9 +14,9 @@ export const onGetCities = () => async (dispatch: Dispatch<AnyAction>) => {
 }
 
 
-export const onGetCitiesSucceeded = (cities: ICity[]) => ({
+export const onGetCitiesSucceeded = (cityWeather: ICity[]) => ({
     type: ON_GET_CITIES_SUCCEEDED,
-    cities,
+    cityWeather,
 });
 
 export const onGetCitiesFailed = () => ({

@@ -1,13 +1,23 @@
 export interface ICity {
-    id: number;
+    coord: {
+        lon: number;
+        lat: number;
+    };
+    weather: string;
+    weather_min: number;
+    weather_max: number;
+    wind: number;
+    clouds: number;
     name: string;
-    country: string;
-    description: string;
-    image: string;
+    img: string;
+    id: number;
+}
+
+export interface ICityData {
+    cities: ICity[];
 }
 
 export interface ICityState {
-    cities: ICity[];
-    loading: boolean;
-    error: string;
+    cities: null | ICityData[];
+    error: boolean;
 }

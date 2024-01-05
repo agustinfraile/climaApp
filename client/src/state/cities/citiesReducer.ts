@@ -1,7 +1,7 @@
 import { ON_GET_CITIES_FAILED, ON_GET_CITIES_SUCCEEDED } from "./citiesConstants";
 
 const initialState = {
-    cities: [],
+    cityWeather: [],
     error: false,
 };
 
@@ -11,7 +11,7 @@ export default (state = initialState, action: any) => {
         case ON_GET_CITIES_SUCCEEDED:
             return {
                 ...state,
-                cities: action.cities,
+                cityWeather: action.cityWeather,
             };
         case ON_GET_CITIES_FAILED:
             return {
