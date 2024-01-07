@@ -17,8 +17,9 @@ const Home = () => {
           </div>
 
           <div className={styles.home_container__content}>
-            {/* <CardWeather /> */}
-            <h1>{state.cities?.cityWeather?.name}</h1>
+            <CardWeather 
+              data = {state}
+            />
           </div>
       </section>
   );
