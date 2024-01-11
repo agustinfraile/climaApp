@@ -1,0 +1,48 @@
+/* importo el archivo de variables de colores */
+@import "../../assets/colors/colors.css";
+
+.formContainer {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    /* background-color: var(--color-form-search); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home_container__search__input {
+    width: 95%;
+    height: 40%;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: var(--color-serch-bar);
+    color: var(--color-text-secondary);
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.home_container__search__button {
+    color: #e7e7e7;
+    background-color: transparent;
+    width: 6em;
+    height: 4em;
+    outline: none;
+    border: none;
+    position: relative;
+    right: 8em;
+}
+
+.home_container__search__button:hover {
+    cursor: pointer;
+}
+
+.home_container__search__button img {
+    width: 2.5em;
+    height: 2.5em;
+    top: .5em;
+    left: .5em;
+}

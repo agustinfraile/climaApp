@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import styles from './SearchWeather.module.css';
 import { onGetCities } from '../../state/cities/citiesActions';
+
+import iconSearch from "../../assets/images/icons/busqueda.png";
+
+import styles from './SearchWeather.module.css';
 
 export const SearchWeather = () => {
 
@@ -25,12 +28,14 @@ export const SearchWeather = () => {
     } else {
       alert('Ingrese una ciudad');
     }
+
+    setValue('');
   }
 
 
   return (
     
-    <form>
+    <form className={styles.formContainer}>
         <input 
           className={styles.home_container__search__input}
           placeholder="Ingrese una ciudad..."
@@ -43,7 +48,7 @@ export const SearchWeather = () => {
           type="submit"
           onClick={handleSubmit}
         >
-            Buscar
+            <img src={iconSearch} alt="buscar" />
         </button>
     </form>
   )
