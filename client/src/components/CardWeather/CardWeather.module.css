@@ -1,0 +1,66 @@
+/* importo el archivo de variables de colores */
+@import "../../assets/colors/colors.css";
+
+.cardContainer {
+    width: 90%;
+    height: 400px;
+    margin: 2em auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.cardContainer_icon {
+    width: 10em;
+    height: 10em;
+    margin: 1em auto;
+    border-radius: 10px;
+
+    background-color: #871f1f8e;
+}
+
+.cardContainer_titles {
+    width: 85%;
+    height: 100px;
+    margin: .5em auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1f6b878e;
+}
+
+.cardContainer_weatherInfo {
+    width: 85%;
+    height: 100px;
+    margin: .5em auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1f6b878e;
+}
+
+.cardContainer_weathers {
+    width: 85%;
+    height: 100px;
+    margin: 1em auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #1f6b878e;
+}

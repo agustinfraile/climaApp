@@ -1,5 +1,7 @@
 import { IProps } from './types';
 
+import styles from './CardWeather.module.css';
+
 
 
 const CardWeather = ({data} : IProps) => {
@@ -11,11 +13,22 @@ const CardWeather = ({data} : IProps) => {
   const maxWeather = data.cities?.cityWeather.weather_max;
 
   return (
-    <div>
-        <h1>{nameCity}</h1>
-        <h3>{weatherCity}</h3>
-        <h3>{minWeather}</h3>
-        <h3>{maxWeather}</h3>
+    <div className={styles.cardContainer}>
+        <div className={styles.cardContainer_icon}>
+
+        </div>
+
+        <div className={styles.cardContainer_titles}>
+          <h1>{nameCity}</h1>
+          <h3>{weatherCity}</h3>
+        </div>
+
+        {/* <div className={styles.cardContainer_weatherInfo}></div> */}
+
+        <div className={styles.cardContainer_weathers}>
+          <h3>{minWeather}</h3>
+          <h3>{maxWeather}</h3>
+        </div>
     </div>
   )
 }
