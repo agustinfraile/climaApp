@@ -18,6 +18,7 @@ export interface ICityData {
 }
 
 export interface ICityState {
+    cityWeather: any;
     cities: null | ICityData[];
     error: boolean;
 }

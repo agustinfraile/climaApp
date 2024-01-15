@@ -1,14 +1,23 @@
 import { SearchWeather } from "../../components/SearchWeather/SearchWeather";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { IStore } from "../../state/types";
 import CardWeather from "../../components/CardWeather/CardWeather";
 import styles from "./Home.module.css";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   
   const state = useSelector((state: IStore) => state);
 
-  console.log(state);
+  
+  const [valueState, setValueState] = useState(undefined);
+
+  useEffect(() => {
+    setValueState(state.cities?.cityWeather.name)
+    console.log(valueState)
+  }
+  , [valueState, state.cities?.cityWeather.name])
+
 
   return (
       <section className={styles.home_container}>
@@ -16,11 +25,18 @@ const Home = () => {
               <SearchWeather />
           </div>
 
-          <div className={styles.home_container__content}>
+        {
+          valueState === undefined ?
+          <></>
+          : (
+
+            <div className={styles.home_container__content}>
             <CardWeather 
               data = {state}
-            />
-          </div>
+              />
+            </div>
+          )
+        }
       </section>
   );
 };
