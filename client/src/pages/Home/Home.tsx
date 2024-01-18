@@ -22,7 +22,9 @@ const Home = () => {
   return (
       <section className={styles.home_container}>
           <div className={styles.home_container__search}>
-              <SearchWeather />
+              <SearchWeather 
+                valueState = {valueState}
+              />
           </div>
 
         {

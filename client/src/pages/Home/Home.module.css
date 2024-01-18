@@ -14,7 +14,7 @@
 }
 
 .home_container__search {
-    background-color: var(--color-background-secondary);
+    /* background-color: var(--color-background-secondary); */
 
 
     width: 100%;
@@ -26,7 +26,7 @@
 }
 
 .home_container__content {
-    background-color: var(--color-background-tertiary);
+    /* background-color: var(--color-background-tertiary); */
 
     width: 100%;
     height: auto;

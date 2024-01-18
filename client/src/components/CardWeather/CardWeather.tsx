@@ -26,8 +26,8 @@ const CardWeather = ({data} : IProps) => {
         {/* <div className={styles.cardContainer_weatherInfo}></div> */}
 
         <div className={styles.cardContainer_weathers}>
-          <h3>{minWeather}</h3>
-          <h3>{maxWeather}</h3>
+          <h3>Temperatura minima: {minWeather}°C</h3>
+          <h3>Temperatura maxima: {maxWeather}°C</h3>
         </div>
     </div>
   )

@@ -6,7 +6,7 @@
     height: auto;
     margin: 0 auto;
     border-radius: 20px;
-    /* background-color: var(--color-form-search); */
+    background-color: var(--color-form-search);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,4 +45,63 @@
     height: 2.5em;
     top: .5em;
     left: .5em;
+}
+
+
+/* formato wrap */
+
+
+
+
+.formContainer_wrap {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background-color: chartreuse;
+}
+
+
+.home_container__search__input_wrap {
+    width: 5em;
+    height: 0%;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 1.5em;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    position: absolute;
+    
+
+
+    background-color: bisque;    
+}
+
+.home_container__search__input_wrap::placeholder {
+    color: transparent;
+}
+
+.home_container__search__button_wrap {
+    width: 6.7em;
+    height: 3em;
+    outline: none;
+    border: none;
+    position: relative;
+
+    background-color: turquoise;
+}
+
+.home_container__search__button_wrap img {
+    width: 3em;
+    height: 3em;
+    
+    background-color: brown;
 }
