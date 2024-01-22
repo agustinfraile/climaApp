@@ -36,54 +36,66 @@ export const SearchWeather = ({valueState}: IProps) => {
 
   return (
     <>
-      <form className={styles.formContainer}>
 
+    
+        {
+          !valueState ? (
+
+            // form completo
+            <form className={styles.formContainer}>
+              <input 
+                className={styles.home_container__search__input}
+                placeholder="Ingrese una ciudad..."
+                type="text"
+                value={valueState} 
+                onChange={handleInputChange}
+              />
+              <button
+                className={styles.home_container__search__button}
+                type="submit"
+                onClick={handleSubmit}
+              >            
+                <img src={iconSearch} alt="buscar" />
+              </button>
+            </form>
+          ) 
+          :
+
+          // form wrap
+          (
+            <form className={styles.formContainer_wrap}>
+
+              <input 
+                    className={styles.home_container__search__input_wrap}
+                    placeholder="Ingrese una ciudad..."
+                    type="text"
+                    value={value} 
+                    onChange={handleInputChange}
+              />
+
+              <button
+                className={styles.home_container__search__button_wrap}
+                type="submit"
+                onClick={handleSubmit}
+                >
+                  <img src={iconSearch} alt="buscar" />
+              </button>
+
+            </form>
+          )
+        }
         
-          <input 
-            className={styles.home_container__search__input}
-            placeholder="Ingrese una ciudad..."
-            type="text"
-            value={value} 
-            onChange={handleInputChange}
-          />
 
 
 
 
 
-          <button
-            className={styles.home_container__search__button}
-            type="submit"
-            onClick={handleSubmit}
-          >            
-            <img src={iconSearch} alt="buscar" />
-          </button>
+
+    </>
+
           
 
 
-      </form>
 
-
-      {/* form wrap */}
-      <form className={styles.formContainer_wrap}>
-
-        <input 
-              className={styles.home_container__search__input_wrap}
-              placeholder="Ingrese una ciudad..."
-              type="text"
-              value={value} 
-              onChange={handleInputChange}
-        />
-
-        <button
-          className={styles.home_container__search__button_wrap}
-          type="submit"
-          onClick={handleSubmit}
-          >
-            <img src={iconSearch} alt="buscar" />
-        </button>
-
-      </form>
-    </>
   )
 }
