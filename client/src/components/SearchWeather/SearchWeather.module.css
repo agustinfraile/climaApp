@@ -6,7 +6,7 @@
     height: auto;
     margin: 0 auto;
     border-radius: 20px;
-    background-color: var(--color-form-search);
+    /* background-color: var(--color-form-search); */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,9 +50,6 @@
 
 /* formato wrap */
 
-
-
-
 .formContainer_wrap {
     width: 50%;
     height: auto;
@@ -77,12 +74,8 @@
     font-size: 1.5em;
     outline: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    
     position: absolute;
-    
-
-
-    background-color: bisque;    
+    /* background-color: bisque;     */
 }
 
 .home_container__search__input_wrap::placeholder {
@@ -95,13 +88,16 @@
     outline: none;
     border: none;
     position: relative;
-
-    background-color: turquoise;
+    /* background-color: turquoise; */
 }
 
 .home_container__search__button_wrap img {
     width: 3em;
-    height: 3em;
-    
-    background-color: brown;
+    height: 3em;   
+    /* background-color: brown; */
+}
+
+
+.formContainer, .formContainer_wrap {
+    transition: all 0.3s ease-in-out;
 }
